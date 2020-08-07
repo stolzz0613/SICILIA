@@ -1,71 +1,57 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
-
 import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+import pic2 from '../assets/images/pic02.png';
+import pic3 from '../assets/images/pic03.jpeg';
+import pic6 from '../assets/images/pic06.jpg';
 import config from '../../config';
+import Slider1 from "../components/Slider1";
+import image from "../assets/images/Logo-Blue-White1.png"
+import image2 from "../assets/images/cheapbl.png"
+
+const SLIDE_COUNT = 5;
+const slides = Array.from(Array(SLIDE_COUNT).keys());
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
       <div className="inner">
-        <h1>
-          <a href="https://www.gatsbyjs.org/">Gatsby</a> HTML5Up
-        </h1>
+        <div className="image">
+          <img src={image} alt="logo" />
+        </div>
         <p>
-          <a href="https://github.com/app-generator/gatsby-html5up-spectral">Open-Source</a> app with Spectral design
+          <a href="https://github.com/stolzz0613">Stay With Friends</a>
         </p>
-        <ul className="actions special">
-          <li>
-            <Scroll type="id" element="one">
-              <a href="/#" className="button primary">
-                Explore
-              </a>
-            </Scroll>
-          </li>
-        </ul>
       </div>
       <Scroll type="id" element="one">
         <a href="#one" className="more">
-          Learn More
+          Explore
         </a>
       </Scroll>
     </section>
 
     <section id="one" className="wrapper style1 special">
-      <div className="inner">
-        <header className="major">
-          <h2>
-            Arcu aliquet vel lobortis ata nisl
-            <br />
-            eget augue amet aliquet nisl cep donec
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p>
-        </header>
+      <div>
         <ul className="icons major">
           <li>
-            <span className="icon fa-gem major style1">
-              <span className="label">Lorem</span>
+            <span className="icon solid fa-coins major style1">
+              <span className="label"></span>
             </span>
+            <p><b >CHEAPEST PRICE GUARANTEED <br /> IF BOOKED DIRECTLY</b></p>
           </li>
           <li>
-            <span className="icon fa-heart major style2">
+            <span className="icon solid fa-clock major style1">
               <span className="label">Ipsum</span>
             </span>
+            <p><b >SELF CHECK-IN/BREAKFAST<br />TO OFFER FLEXIBILITY</b></p>
           </li>
           <li>
-            <span className="icon solid fa-code major style3">
+            <span className="icon solid fa-home major style1">
               <span className="label">Dolor</span>
             </span>
+            <p><b >3 DIFFERENT LOCATIONS  <br /> 10 MINUTES FROM DOWNTOWN</b></p>
           </li>
         </ul>
       </div>
@@ -122,89 +108,32 @@ const IndexPage = () => (
       </section>
     </section>
 
-    <section id="three" className="wrapper style3 special">
+    <section id="three" className="wrapper style1 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+          <h2>AS AN AVID TRAVELLER I WANTED TO CREATE A HOME THAT WELCOMES PEOPLE FROM ALL OVER THE WORLD</h2>
+          <h5>ZENO DISCOVERED ICELAND IN 2006 AND HAS SETTLED EVER SINCE</h5>
+          <p><span className="image left"><img src={pic6} alt="" /></span>
+
+              For over 11 years I am lucky to welcome guests from all over the globe.
+
+              In 2006, I travelled to Iceland and fell in love with the small peninsula of Seltjarnarness, where my houses are located. The peaceful neighbourhood gives a glimpse of the vast nature Iceland has to offer. Esja Mountain, Faxafloi Bay, Snaefellsjökull glacier, Valhúsa Park, Grótta Lights and the all so popular northern lights are things to be seen here. If you want to enjoy the culture of Reykjavik, a 20-minute walk is all it takes to get to the Downtown area with a variety of museums, restaurants and bars.
+
+              In the humble beginnings in 2009 I renovated the House myself and became a popular travellers spot right away. Now we offer on 3 locations a wide selection from cosy Economy Rooms to Family Apartments to an incredible sea view at our Grótta Northern Lights Apartment.
+
+              I hope that my team and I can welcome you soon and help you on your travels in Iceland. If you have any questions before your arrival use our live chat! Remember that the cheapest price is only guaranteed directly through our website..
           </p>
         </header>
-        <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-        </ul>
+
       </div>
     </section>
 
-    <section id="cta" className="wrapper style4">
-      <div className="inner">
-        <header>
-          <h2>Arcue ut vel commodo</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
-          </p>
-        </header>
-        <ul className="actions stacked">
-          <li>
-            <a href="/#" className="button fit primary">
-              Activate
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="button fit">
-              Learn More
-            </a>
-          </li>
-        </ul>
-      </div>
+    <section id="cta" className="wrapper style2 special">
+      <Slider1
+        slides={slides}
+      />
     </section>
-  </Layout>
+  </Layout >
 );
 
 export default IndexPage;

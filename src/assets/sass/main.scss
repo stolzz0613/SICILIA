@@ -554,6 +554,7 @@
 		@include icon;
 		border-bottom: none;
 		position: relative;
+		margin-bottom: 15px;
 
 		> .label {
 			display: none;
@@ -1059,6 +1060,8 @@
 	.spotlight {
 		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
+		margin-bottom: 15px;
+		
 
 		.image {
 			@include vendor('order', '1');

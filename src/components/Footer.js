@@ -16,9 +16,9 @@ export default function Footer() {
         })}
       </ul>
       <ul className="copyright">
-        <li>&copy; AppSeed</li>
+        <li>&copy; ANDRESB</li>
         <li>
-          Design: <a href="http://html5up.net">HTML5 UP</a>
+          Design: <a href="https://www.linkedin.com/in/andres613/">Andres B.</a>
         </li>
       </ul>
     </footer>

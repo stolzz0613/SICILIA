@@ -16,13 +16,7 @@ module.exports = {
       style: 'brands',
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/app-generator/gatsby-html5up-spectral',
+      url: 'https://github.com/stolzz0613',
     },
-    {
-      style: 'brands',
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/webappseed',
-    }
   ],
 };

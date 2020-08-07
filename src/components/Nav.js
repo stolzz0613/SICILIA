@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-export default function Nav({ onMenuToggle = () => {} }) {
+export default function Nav({ onMenuToggle = () => { } }) {
   return (
     <nav id="nav">
       <ul>
@@ -22,10 +22,10 @@ export default function Nav({ onMenuToggle = () => {} }) {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/Generic">Generic Page</Link>
+                <Link to="/Generic">Rooms</Link>
               </li>
               <li>
-                <Link to="/Elements">Elements</Link>
+                <Link to="/Generic">Book</Link>
               </li>
             </ul>
             <a
