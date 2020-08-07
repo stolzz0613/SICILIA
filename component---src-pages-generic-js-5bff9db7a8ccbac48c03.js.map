@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/Generic.js"],"names":["Generic"],"mappings":"6FAAA,gCAQeA,UANC,WACZ,OACI","file":"component---src-pages-generic-js-5bff9db7a8ccbac48c03.js","sourcesContent":["import React from 'react';\n\nconst Generic = () => {\n    return (\n        <h1>GENERIC PAGE</h1>\n    );\n}\n\nexport default Generic;"],"sourceRoot":""}
